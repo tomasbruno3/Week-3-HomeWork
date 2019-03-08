@@ -1,0 +1,382 @@
+/* CSS Document for Screens */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,700i');
+
+
+/* Section */
+
+section {
+  padding: 0 30px;
+}
+
+section::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+/* Section Main */
+
+section.main {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+section.main aside {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+ section.main  .content {
+   margin: 15px;
+   padding: 20px;
+
+   background-repeat: no-repeat;
+   background-position: center top;
+   background-size: 300px 300px;
+   padding-top: 320px;
+ }
+
+ section.main aside h3 a {
+   color: #000;
+   text-decoration: none;
+ }
+
+ section.main aside p {
+   font-style: normal;
+ }
+
+  section.main aside .content.trending {
+    background-image: url("./assets/demo1.jpg");
+  }
+
+  section.main aside .content.findit {
+    background-image: url("./assets/demo2.jpg");
+  }
+
+  section.main aside .content.tools {
+    background-image: url("./assets/demo3.jpg");
+  }
+
+  /* Section 2 */
+
+  section.atmosphere {
+    background-color: #1AAA98;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+  }
+
+  section.atmosphere article {
+
+    background-image: url("./assets/logo.png");
+    background-repeat: no-repeat;
+    background-position: 600px center;
+    min-width: 220px;
+
+  }
+
+  section.atmosphere .text{
+  /*  padding: 0 800px 0 100px; */
+  position: relative;
+  left: 100px;
+  top: 5px;
+  max-width: 300px;
+  }
+
+
+/* Footer */
+
+footer {
+  font-size: 0.8em;
+  margin: 40px;
+  color: #999;
+}
+
+footer .content {
+  display: inline;
+}
+
+footer a {
+  margin-left: 30px;
+  color: #777;
+
+}
+
+footer a:visited {color: #777}
+footer a:hover { color: #777}
+
+
+
+
+/* Navigation */
+
+
+nav {
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25px 0 0 0;
+  width: 100%;
+
+}
+
+nav::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+
+}
+
+nav ul li:hover {background-color: #2b0306}
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 125px;
+  position: relative;
+
+}
+
+nav ul li a:visited {color: #fff}
+
+nav ul li a:hover {background-color: #6d0911}
+
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  background-color: #2b0306;
+  display: none;
+}
+
+nav ul ul li {
+  position: relative;
+}
+
+nav ul ul ul {
+  left: 100%;
+  top: 0px;
+}
+
+nav > ul {
+  padding-left: 200px;
+}
+
+nav > ul > li {
+  float: left;
+}
+
+nav > ul > li > a {
+  width: auto;
+  padding: 10px 20px 15px 20px;
+}
+
+
+@media screen and (max-width: 920px) {
+
+  h1 {
+    font-size: 1em;
+  }
+
+  #header {
+    max-height: 400px;
+    background-image: url("./assets/site_showcase_bg.jpg");
+  }
+
+  #header .hero {
+    text-align: center ;
+    left: 30%;
+  }
+
+  header a.logo {
+    background-position: center;
+  }
+
+  section.main aside {
+    width: 40%;
+    float: left;
+    background-size: 250px 250px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  section.atmosphere article {
+
+    background-size: 250px auto;
+    background-position: 85% center;
+
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 775px) {
+
+  section.main aside {
+    width: 100%;
+    float: none;
+    background-size: 200px 200px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+  section.main aside p {
+    padding-left: 20%;
+    padding-right: 20%;
+
+  }
+
+  section.atmosphere article {
+    min-height: 500px;
+    background-size: 220px auto;
+    background-position: center bottom;
+  }
+
+  section.atmosphere .text{
+    display: inline-block;
+    left: 25%;
+    padding-right: 40%;
+    text-align: left;
+
+  }
+
+  nav {
+    display: none;
+  }
+
+}
+
+/* Header */
+
+header a.logo {
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  width: 120px;
+  height: 48px;
+  background-image: url("./assets/Logo2.png");
+  background-repeat: no-repeat;
+  background-position: 0 0 ;
+  background-size: contain;
+  top: 20px;
+  left: 60px;
+}
+header a.logo span{
+  display: none;
+}
+
+header div.hero {
+  position: absolute;
+  width: 42%;
+  top: 180px;
+  left: 10%;
+}
+
+header div.hero h1 {
+  line-height: 1em;
+  color: white;
+}
+
+header div.hero h2 {
+  font-size: 0.8em;
+  font-weight: 400;
+  padding-bottom: 30px;
+  color: white;
+}
+
+header {
+  height: 430px;
+  background: #cf0004;
+  background-image: url("./assets/site_showcase_bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+a.btn {
+  font-size: 1.2em;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 4px 15px;
+}
+
+
+/* General */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  margin: 0;
+  padding: 0;
+
+}
+
+#page {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+
+
+/* Text*/
+
+h1 {
+  margin: 0 0 0.4em 0;
+  font-size: 2.8em;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+
+h3 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+h4  {
+  margin: 0 0 0.5em 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  color: #007eff;
+}
+a:visited {color: #65biff};
