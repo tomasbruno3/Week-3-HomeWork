@@ -1,5 +1,8 @@
 @import './home';
 @import './about';
+@import './contact';
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -119,7 +122,7 @@ nav{
 }
 
 /* Header */
-header{
+.header_2{
   background-color: $color-green;
   display: flex;
   align-items: center;
@@ -132,6 +135,7 @@ header{
     font-size: 20pt;
   }
 }
+
 /* Main */
 main{
   width: 100%;
@@ -148,8 +152,7 @@ main{
   }
 }
 
-
-/****** Acordion *******/
+/* Acordion */
 .acordion-1{
   width: 100%;
     min-height: 10px;
@@ -192,6 +195,49 @@ main{
   }
 }
 
+/* Form */
+.form{
+  margin:10% 0;
+}
+input{
+  width: 100%;
+  height: auto;
+  border: 1px solid $color-dark-grey;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom:2%;
+  color: $color-dark-grey;
+  font-size: 14px;
+
+  p{
+    margin: 0px 0;
+    font-weight: 600;
+  }
+
+}
+
+input[type=message] {
+
+ height: 200px;
+}
+
+button{
+  border-radius: 5px;
+  border: 1px solid $color-dark-grey;
+  background-color: $color-white;
+  height: 30px;
+  width: 90px;
+
+  &:hover{
+    background-color: $color-green;
+  }
+
+  p{
+    padding: 2px 0;
+    margin: 0px ;
+  }
+}
 /* Box */
 
 .box{
@@ -209,9 +255,7 @@ main{
     text-decoration: none;
 
   }
-  &:hover button{
-    background-color: $color-green;
-  }
+  
 
   button{
     border-radius: 5px;
@@ -219,6 +263,10 @@ main{
     background-color: $color-white;
     height: 30px;
     width: 90px;
+
+    &:hover{
+      background-color: $color-green;
+    }
   }
 
 }
@@ -368,16 +416,20 @@ header{
       }
     }
   }
-
+  .form {
+    margin: 0;
+ 
+}
   footer{
     display: flex;
-    justify-content: space-between;
+
 
     ul{
       width: 50%;
       text-align: center;
       display: flex;
       align-items: center;
+      padding-top: 0;
       padding-left: 6%;
       
       li{
@@ -396,10 +448,14 @@ header{
       align-items: center;
       font-size: 9pt;
       padding-left: 8%;
+      padding-top: 0;
     }
   }
 
-
+  .form {
+    margin: 0;
+    width: 50%;
+}
 
 }
 
